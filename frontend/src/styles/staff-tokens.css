@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* --- Global Tokens đã được chuyển sang global-tokens.css --- */
+
+  /* --- Backward Compatibility (Map biến cũ sang global-tokens) --- */
+  --staff-primary: var(--color-link-active);
+  --staff-primary-dark: var(--color-sidebar);
+  --staff-secondary: var(--color-cta);
+  --staff-primary-light: rgba(46, 95, 163, 0.12); /* Clinical Blue light */
+  --staff-primary-focus: var(--shadow-focus);
+  --staff-sidebar-active-bg: rgba(255, 255, 255, 0.18);
+
+  --staff-border: var(--color-border);
+  --staff-bg: var(--color-bg-page);
+  --staff-surface: var(--color-bg-card);
+  --staff-bg-light: #F5F7FA;
+  --staff-text: var(--color-text-main);
+  --staff-text-muted: var(--color-text-sub);
+  --staff-text-on-primary: var(--color-bg-card);
+  --staff-text-sidebar-muted: rgba(255, 255, 255, 0.72);
+
+  --staff-success-bg: var(--color-state-active-bg);
+  --staff-success-text: var(--color-state-active-text);
+  --staff-warning-bg: var(--color-state-suspended-bg);
+  --staff-warning-text: var(--color-state-suspended-text);
+
+  --staff-badge-admin-bg: var(--color-role-admin-bg);
+  --staff-badge-admin-text: var(--color-role-admin-text);
+  --staff-badge-doctor-bg: var(--color-role-doctor-bg);
+  --staff-badge-doctor-text: var(--color-role-doctor-text);
+  --staff-badge-receptionist-bg: var(--color-role-receptionist-bg);
+  --staff-badge-receptionist-text: var(--color-role-receptionist-text);
+
+  --staff-avatar-bg: var(--color-cta);
+  --staff-avatar-text: #ffffff;
+  --staff-overlay: rgba(15, 23, 42, 0.45);
+  --staff-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --staff-toast-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  --staff-radius: 8px;
+  --staff-radius-lg: 12px;
+
+  --staff-sidebar-width: clamp(200px, 18vw, 236px);
+  --staff-sidebar-brand-padding: clamp(16px, 2vw, 20px) clamp(12px, 1.5vw, 16px)
+    clamp(12px, 1.5vw, 16px);
+  --staff-sidebar-nav-padding: 4px clamp(8px, 1vw, 10px);
+  --staff-sidebar-link-padding: clamp(7px, 0.8vw, 9px) clamp(10px, 1.2vw, 12px);
+  --staff-sidebar-user-padding: clamp(10px, 1.2vw, 14px) clamp(8px, 1vw, 10px);
+
+  --staff-content-padding-x: clamp(16px, 3vw, 32px);
+  --staff-content-padding-y: clamp(20px, 2.5vw, 28px);
+
+  /* Shared spacing and radius tokens */
+  --layout-padding: 24px;
+  --element-gap: 16px;
+  --card-radius: 12px;
+  --input-radius: 8px;
+
+  --staff-font: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* --- Global Focus Overrides --- */
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: var(--accent-color, var(--color-secondary)) !important;
+  transition: border-color 0.2s ease-in-out;
+}
