@@ -9,8 +9,9 @@ Dự án xây dựng website quản lý nha khoa Dental Care và thực hiện k
 | Hệ thống được kiểm thử | Dental Care Management System |
 | Phương pháp thực hiện | Kiểm thử thủ công trên giao diện website |
 | Công cụ quản lý ca kiểm thử | Microsoft Excel |
-| Minh chứng | Ảnh màn hình và video demo có trong link drive |
-| Báo cáo | https://drive.google.com/drive/u/0/folders/1xHW1MIWOvdLJJe0ciTzccSaaMKHSPwBu |
+| Minh chứng | Ảnh màn hình và video demo trong thư mục Google Drive |
+| Mã nguồn | [WEBSITE_QUAN_LY_NHA_KHOA](https://github.com/phamtienchieu87-pixel/WEBSITE_QUAN_LY_NHA_KHOA) |
+| Báo cáo và minh chứng | [Xem tài liệu trên Google Drive](https://drive.google.com/drive/folders/1xHW1MIWOvdLJJe0ciTzccSaaMKHSPwBu) |
 
 ## 1. Mục tiêu đề tài
 
@@ -65,7 +66,7 @@ Excel được sử dụng để quản lý ca kiểm thử và ghi nhận kết
 
 ## 4. Phương pháp kiểm thử
 
-Nhóm kiểm tra phần mềm dựa trên yêu cầu, dữ liệu đầu vào và kết quả quan sát được trên giao diện.
+Nhóm kiểm tra phần mềm dựa trên yêu cầu, dữ liệu đầu vào và kết quả quan sát được trên giao diện. Cách tiếp cận này tập trung vào hành vi bên ngoài của hệ thống theo phương pháp kiểm thử hộp đen.
 
 Các nhóm tình huống được lựa chọn gồm:
 
@@ -77,7 +78,7 @@ Các nhóm tình huống được lựa chọn gồm:
 - Tìm kiếm dữ liệu không tồn tại.
 - Kiểm tra dữ liệu sau khi lưu và tải lại trang.
 
-Mỗi tình huống cần có kết quả mong đợi được xác định trước khi thực hiện. Kết quả thực tế được đối chiếu với kết quả mong đợi để đánh giá trạng thái.
+Mỗi tình huống có kết quả mong đợi được xác định trước khi thực hiện. Kết quả thực tế được đối chiếu với kết quả mong đợi để đánh giá trạng thái của ca kiểm thử.
 
 ## 5. Quy trình thực hiện
 
@@ -89,7 +90,7 @@ Mỗi tình huống cần có kết quả mong đợi được xác định trư
 6. Quan sát thông báo, giao diện và dữ liệu được lưu.
 7. Đối chiếu kết quả thực tế với kết quả mong đợi.
 8. Ghi kết quả, trạng thái và lưu ảnh hoặc video minh chứng.
-9. Ghi nhận sai lệch, phân tích nguyên nhân và kiểm thử lại sau khi sửa.
+9. Ghi nhận sai lệch để phục vụ phân tích và kiểm thử lại sau khi sửa.
 
 ### Quy ước trạng thái
 
@@ -100,7 +101,7 @@ Mỗi tình huống cần có kết quả mong đợi được xác định trư
 | Not Run | Chưa thực hiện ca kiểm thử |
 | Not Completed | Đã thực hiện nhưng chưa hoàn thành hoặc chưa đủ căn cứ kết luận |
 
-Với ca nhập dữ liệu không hợp lệ, hệ thống từ chối đúng yêu cầu thì ca có thể được ghi nhận **Passed**.
+Với ca nhập dữ liệu không hợp lệ, hệ thống từ chối đúng yêu cầu thì ca được ghi nhận **Passed**.
 
 Số ca Failed không đồng nghĩa với số lỗi độc lập, vì một lỗi có thể ảnh hưởng đến nhiều ca kiểm thử.
 
@@ -138,7 +139,7 @@ Các trường thông tin chính:
 | UC1.1_FUNC_008 | Tìm kiếm không có kết quả |
 | UC1.1_EXC_001 | Kiểm tra trường hợp trùng CCCD |
 
-Khi thực hiện lại bộ ca, cần lưu riêng kết quả của từng đợt chạy. Không ghi Passed trước khi thực hiện và không ghi các bước xác minh chưa thực sự tiến hành.
+Kết quả được ghi nhận sau khi thực thi và đối chiếu với kết quả mong đợi. Khi thực hiện lại một ca, dữ liệu và kết quả của lần chạy được lưu riêng để tránh nhầm lẫn với lần thực hiện trước.
 
 ## 7. Nội dung demo kiểm thử thủ công
 
@@ -156,17 +157,15 @@ Do thời gian trình bày có hạn, demo tập trung vào một số tình hu�
 | Nhập số điện thoại sai định dạng | Phát hiện dữ liệu không hợp lệ và chặn lưu theo yêu cầu |
 | Nhập CCCD không đúng độ dài | Phát hiện dữ liệu không hợp lệ và chặn lưu theo yêu cầu |
 
-Đăng nhập được thực hiện trước khi truy cập chức năng quản lý khách hàng. Nếu đánh giá đăng nhập như một chức năng riêng, cần ghi nhận ca và kết quả tương ứng.
+Đăng nhập được thực hiện trước khi truy cập chức năng quản lý khách hàng.
 
-### Cách lưu minh chứng
+Trong phần demo, nhóm minh họa các thao tác nhập dữ liệu, quan sát phản hồi của hệ thống và đối chiếu với kết quả mong đợi. Các thao tác xác minh có thể gồm tìm lại bản ghi, đối chiếu thông tin và tải lại trang để kiểm tra dữ liệu đã lưu.
 
-- Chụp rõ dữ liệu đầu vào, thông báo hoặc kết quả cần chứng minh.
-- Đặt tên ảnh gắn với mã ca hoặc chức năng.
-- Ghi nhận kết quả vào đúng dòng trong Excel.
-- Video thể hiện thao tác, quá trình đối chiếu và cách ghi kết quả.
-- Với ca thêm dữ liệu, có thể tải lại trang và tìm lại bản ghi để xác minh dữ liệu đã lưu.
+Kết quả của từng ca được ghi nhận trong file TestCase, kèm ảnh hoặc video minh chứng. Video chỉ trình bày một số ca tiêu biểu, không đại diện cho toàn bộ bộ kiểm thử.
 
-Bảng tình huống trên mô tả nội dung kiểm tra, không thay thế kết quả thực thi và không xác nhận rằng mọi ca đều Passed.
+### Minh chứng thực hiện
+
+[Tài liệu, bộ TestCase, ảnh và video demo trên Google Drive](https://drive.google.com/drive/folders/1xHW1MIWOvdLJJe0ciTzccSaaMKHSPwBu)
 
 ## 8. Tổng hợp kết quả kiểm thử
 
@@ -200,7 +199,7 @@ Tuy nhiên:
 - Các chức năng đang sử dụng dữ liệu mẫu cần được đánh giá riêng.
 - Chưa có đủ căn cứ từ demo để kết luận về bảo mật, hiệu năng hoặc khả năng vận hành thực tế.
 
-Nhóm tiếp tục ưu tiên các sai lệch ảnh hưởng đến dữ liệu và nghiệp vụ, thực hiện kiểm thử lại sau khi sửa và kiểm thử hồi quy các chức năng liên quan.
+Hướng xử lý tiếp theo là ưu tiên các sai lệch ảnh hưởng đến dữ liệu và nghiệp vụ, thực hiện kiểm thử lại sau khi sửa và kiểm thử hồi quy các chức năng liên quan.
 
 ## 10. Hướng dẫn chạy dự án
 
@@ -297,16 +296,20 @@ Không xóa Docker volume nếu cần giữ dữ liệu và minh chứng kiểm 
 
 ## 11. Tài liệu và video demo
 
+Báo cáo, bộ ca kiểm thử và minh chứng được lưu tại:
+
+[Truy cập thư mục tài liệu và minh chứng trên Google Drive](https://drive.google.com/drive/folders/1xHW1MIWOvdLJJe0ciTzccSaaMKHSPwBu)
+
 | Tài liệu | Nội dung |
 |---|---|
-| DacTaYeuCau_QuanLyNhaKhoa.docx | Yêu cầu và quy tắc nghiệp vụ |
-| ThietKeVaCaiDat_QuanLyNhaKhoa.docx | Thiết kế, thuật toán và cài đặt |
+| DacTaYeuCau_QuanLyNhaKhoa.docx | Yêu cầu chức năng, tác nhân và quy tắc nghiệp vụ |
+| ThietKeVaCaiDat_QuanLyNhaKhoa.docx | Thiết kế hệ thống, thuật toán và hướng dẫn cài đặt |
 | BaoCaoKiemThu_QuanLyNhaKhoa.docx | Kế hoạch, kết quả và đánh giá kiểm thử |
-| TestCase.xlsx | Bộ ca và kết quả thực thi |
-| Ảnh minh chứng | Kết quả quan sát được của các ca |
-| Video demo | Quá trình thao tác và ghi nhận kiểm thử thủ công |
+| TestCase.xlsx | Bộ ca kiểm thử, dữ liệu đầu vào, kết quả mong đợi, kết quả thực tế và trạng thái |
+| Ảnh minh chứng | Thông báo và dữ liệu quan sát được khi thực hiện các ca |
+| Video demo | Minh họa quá trình kiểm thử thủ công trên website |
 
-**Video demo:** Bổ sung đường dẫn sau khi tải video lên và kiểm tra quyền xem.
+Video tập trung vào một số tình huống của chức năng quản lý khách hàng. Số liệu tổng hợp tại mục 8 được lấy từ bộ TestCase đầy đủ, không phải số lượng ca xuất hiện trong video.
 
 ## 12. Nhóm thực hiện
 
