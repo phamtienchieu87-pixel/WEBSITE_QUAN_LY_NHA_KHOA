@@ -10,7 +10,7 @@ Dự án xây dựng website quản lý nha khoa Dental Care và thực hiện k
 | Phương pháp thực hiện | Kiểm thử thủ công trên giao diện website |
 | Công cụ quản lý ca kiểm thử | Microsoft Excel |
 | Minh chứng | Ảnh màn hình và video demo |
-| Mã nguồn | [WEBSITE_QUAN_LY_NHA_KHOA](https://github.com/phamtienchieu87-pixel/WEBSITE_QUAN_LY_NHA_KHOA) |
+| Báo  | https://drive.google.com/drive/u/0/folders/1xHW1MIWOvdLJJe0ciTzccSaaMKHSPwBu |
 
 ## 1. Mục tiêu đề tài
 
