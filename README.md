@@ -9,8 +9,8 @@ Dự án xây dựng website quản lý nha khoa Dental Care và thực hiện k
 | Hệ thống được kiểm thử | Dental Care Management System |
 | Phương pháp thực hiện | Kiểm thử thủ công trên giao diện website |
 | Công cụ quản lý ca kiểm thử | Microsoft Excel |
-| Minh chứng | Ảnh màn hình và video demo |
-| Báo  | https://drive.google.com/drive/u/0/folders/1xHW1MIWOvdLJJe0ciTzccSaaMKHSPwBu |
+| Minh chứng | Ảnh màn hình và video demo có trong link drive |
+| Báo cáo | https://drive.google.com/drive/u/0/folders/1xHW1MIWOvdLJJe0ciTzccSaaMKHSPwBu |
 
 ## 1. Mục tiêu đề tài
 
