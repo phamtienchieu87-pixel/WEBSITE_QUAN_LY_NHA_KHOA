@@ -48,3 +48,5 @@ Backend tự tạo tài khoản admin khi kết nối cơ sở dữ liệu trố
 Chức năng gửi email kích hoạt cần thêm `MAIL_USER` và `MAIL_PASS` (mật khẩu ứng dụng Gmail) trong `backend/.env`. Có thể đăng nhập admin mà không cấu hình email.
 
 Để dừng: nhấn `Ctrl+C` ở hai terminal, rồi chạy `docker compose stop` tại thư mục dự án. Chạy `docker compose up -d` để khởi động lại MongoDB.
+
+**Link btl:** https://drive.google.com/drive/u/0/folders/1xHW1MIWOvdLJJe0ciTzccSaaMKHSPwBu
