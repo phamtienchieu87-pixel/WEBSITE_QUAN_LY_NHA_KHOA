@@ -12,8 +12,14 @@ Dự án xây dựng website quản lý nha khoa Dental Care và thực hiện k
 | Minh chứng | Ảnh màn hình và video demo trong thư mục Google Drive |
 | Mã nguồn | [WEBSITE_QUAN_LY_NHA_KHOA](https://github.com/phamtienchieu87-pixel/WEBSITE_QUAN_LY_NHA_KHOA) |
 | Báo cáo và minh chứng | [Xem tài liệu trên Google Drive](https://drive.google.com/drive/folders/1xHW1MIWOvdLJJe0ciTzccSaaMKHSPwBu) |
+## 1. Nhóm thực hiện
 
-## 1. Mục tiêu đề tài
+| Thành viên | MSSV | Công việc chính |
+|---|---|---|
+| Nguyễn Đức Hiếu | 23010614 | Phân tích yêu cầu, kiến trúc; phát triển các chức năng quản lý hồ sơ, nhân sự, dịch vụ, bảng giá và lịch làm việc; đặc tả và kiểm thử phần được giao |
+| Phạm Tiến Chiêu | 23010526 | Thiết kế lớp và dữ liệu; các nghiệp vụ lịch hẹn, tiếp đón, khám, thanh toán và doanh thu; phối hợp tích hợp, kiểm thử và tổng hợp báo cáo |
+| Bùi Hoàng Thái Anh | 23010543 | Giao diện và thiết kế xử lý phân hệ lương; thuật toán tính lương, giờ quy đổi và hệ số; đặc tả và kiểm thử phần được giao |
+## 2. Mục tiêu đề tài
 
 Dental Care là website hỗ trợ quản lý thông tin khách hàng, nhân sự, dịch vụ, lịch khám và các nghiệp vụ liên quan đến tiếp đón, khám bệnh, thanh toán và tính lương.
 
@@ -26,7 +32,7 @@ Hoạt động kiểm thử được thực hiện nhằm:
 - Lưu bằng chứng để hỗ trợ phân tích lỗi và kiểm thử lại.
 - Đánh giá chất lượng hệ thống trong phạm vi đã kiểm tra.
 
-## 2. Phạm vi hệ thống
+## 3. Phạm vi hệ thống
 
 Hệ thống được mô tả trong tài liệu theo bốn phân hệ:
 
@@ -47,7 +53,7 @@ Khách hàng là đối tượng được quản lý hồ sơ trong các luồng
 
 Phạm vi đặc tả không đồng nghĩa mọi chức năng đã được triển khai đầy đủ. Khi đánh giá, cần đối chiếu từng chức năng với phiên bản phần mềm thực tế; các màn hình sử dụng dữ liệu mẫu chưa đủ căn cứ để xác nhận nghiệp vụ đã hoàn thiện.
 
-## 3. Công nghệ và công cụ
+## 4. Công nghệ và công cụ
 
 | Thành phần | Công nghệ, công cụ | Vai trò |
 |---|---|---|
@@ -64,7 +70,7 @@ Trong phạm vi báo cáo và demo hiện tại, nhóm thực hiện **kiểm th
 
 Excel được sử dụng để quản lý ca kiểm thử và ghi nhận kết quả, không tự động thực hiện các thao tác trên website.
 
-## 4. Phương pháp kiểm thử
+## 5. Phương pháp kiểm thử
 
 Nhóm kiểm tra phần mềm dựa trên yêu cầu, dữ liệu đầu vào và kết quả quan sát được trên giao diện. Cách tiếp cận này tập trung vào hành vi bên ngoài của hệ thống theo phương pháp kiểm thử hộp đen.
 
@@ -80,7 +86,7 @@ Các nhóm tình huống được lựa chọn gồm:
 
 Mỗi tình huống có kết quả mong đợi được xác định trước khi thực hiện. Kết quả thực tế được đối chiếu với kết quả mong đợi để đánh giá trạng thái của ca kiểm thử.
 
-## 5. Quy trình thực hiện
+## 6. Quy trình thực hiện
 
 1. Đọc yêu cầu và xác định chức năng cần kiểm tra.
 2. Chọn ca kiểm thử tương ứng trong file Excel.
@@ -105,7 +111,7 @@ Với ca nhập dữ liệu không hợp lệ, hệ thống từ chối đúng y
 
 Số ca Failed không đồng nghĩa với số lỗi độc lập, vì một lỗi có thể ảnh hưởng đến nhiều ca kiểm thử.
 
-## 6. Tổ chức bộ TestCase
+## 7. Tổ chức bộ TestCase
 
 File `TestCase.xlsx` được chia theo bốn phân hệ:
 
@@ -141,7 +147,7 @@ Các trường thông tin chính:
 
 Kết quả được ghi nhận sau khi thực thi và đối chiếu với kết quả mong đợi. Khi thực hiện lại một ca, dữ liệu và kết quả của lần chạy được lưu riêng để tránh nhầm lẫn với lần thực hiện trước.
 
-## 7. Nội dung demo kiểm thử thủ công
+## 8. Nội dung demo kiểm thử thủ công
 
 Do thời gian trình bày có hạn, demo tập trung vào một số tình huống của chức năng quản lý khách hàng.
 
@@ -167,7 +173,7 @@ Kết quả của từng ca được ghi nhận trong file TestCase, kèm ảnh 
 
 [Tài liệu, bộ TestCase, ảnh và video demo trên Google Drive](https://drive.google.com/drive/folders/1xHW1MIWOvdLJJe0ciTzccSaaMKHSPwBu)
 
-## 8. Tổng hợp kết quả kiểm thử
+## 9. Tổng hợp kết quả kiểm thử
 
 Bản TestCase được đối chiếu trước đợt chạy lại demo có số liệu:
 
@@ -185,7 +191,7 @@ Tỷ lệ Passed trên tổng số ca của bản này:
 
 **Lưu ý:** Đây là số liệu của bản tổng hợp trước đợt quay lại demo. Khi xóa kết quả và chạy lại, cần cập nhật bảng theo file Excel mới trước khi sử dụng làm kết quả báo cáo cuối cùng. Không dùng số liệu trên để đại diện cho các ca vừa thực hiện trong video.
 
-## 9. Đánh giá và giới hạn
+## 10. Đánh giá và giới hạn
 
 Hoạt động kiểm thử giúp đối chiếu cách xử lý của hệ thống với yêu cầu, phát hiện sai lệch và cung cấp căn cứ để hoàn thiện phần mềm.
 
@@ -201,16 +207,16 @@ Tuy nhiên:
 
 Hướng xử lý tiếp theo là ưu tiên các sai lệch ảnh hưởng đến dữ liệu và nghiệp vụ, thực hiện kiểm thử lại sau khi sửa và kiểm thử hồi quy các chức năng liên quan.
 
-## 10. Hướng dẫn chạy dự án
+## 11. Hướng dẫn chạy dự án
 
-### 10.1. Yêu cầu
+### 11.1. Yêu cầu
 
 - Node.js phiên bản 22.12 trở lên.
 - Docker Desktop đang chạy Linux containers.
 - Trình duyệt web.
 - Microsoft Excel để đọc và cập nhật bộ ca kiểm thử.
 
-### 10.2. Khởi động MongoDB
+### 11.2. Khởi động MongoDB
 
 Mở PowerShell tại thư mục dự án:
 
@@ -226,7 +232,7 @@ docker compose ps
 
 Dữ liệu MongoDB được lưu trong Docker volume và vẫn còn khi dừng container.
 
-### 10.3. Chuẩn bị cấu hình backend
+### 11.3. Chuẩn bị cấu hình backend
 
 Nếu chưa có file `backend/.env`:
 
@@ -238,7 +244,7 @@ if (!(Test-Path "backend\.env")) {
 
 Không đưa file `.env` chứa thông tin bí mật lên GitHub.
 
-### 10.4. Chạy backend
+### 11.4. Chạy backend
 
 Trong terminal thứ nhất, từ thư mục dự án:
 
@@ -255,7 +261,7 @@ Backend listening on http://localhost:5000
 MongoDB Connected successfully
 ```
 
-### 10.5. Chạy frontend
+### 11.5. Chạy frontend
 
 Mở terminal thứ hai tại thư mục dự án:
 
@@ -273,7 +279,7 @@ Truy cập:
 
 Các lần chạy sau có thể bỏ qua `npm ci` nếu thư viện không thay đổi.
 
-### 10.6. Tài khoản demo
+### 11.6. Tài khoản demo
 
 Backend tự tạo tài khoản admin khi kết nối cơ sở dữ liệu trống:
 
@@ -282,7 +288,7 @@ Backend tự tạo tài khoản admin khi kết nối cơ sở dữ liệu trố
 
 Tài khoản này phục vụ môi trường demo. Chức năng gửi email kích hoạt cần cấu hình `MAIL_USER` và `MAIL_PASS` trong `backend/.env`; có thể đăng nhập admin mà không cấu hình email.
 
-### 10.7. Dừng dự án
+### 11.7. Dừng dự án
 
 Nhấn `Ctrl+C` ở hai terminal đang chạy frontend và backend.
 
@@ -294,7 +300,7 @@ docker compose stop
 
 Không xóa Docker volume nếu cần giữ dữ liệu và minh chứng kiểm thử.
 
-## 11. Tài liệu và video demo
+## 12. Tài liệu và video demo
 
 Báo cáo, bộ ca kiểm thử và minh chứng được lưu tại:
 
@@ -310,14 +316,6 @@ Báo cáo, bộ ca kiểm thử và minh chứng được lưu tại:
 | Video demo | Minh họa quá trình kiểm thử thủ công trên website |
 
 Video tập trung vào một số tình huống của chức năng quản lý khách hàng. Số liệu tổng hợp tại mục 8 được lấy từ bộ TestCase đầy đủ, không phải số lượng ca xuất hiện trong video.
-
-## 12. Nhóm thực hiện
-
-| Thành viên | MSSV | Công việc chính |
-|---|---|---|
-| Nguyễn Đức Hiếu | 23010614 | Phân tích yêu cầu, kiến trúc; phát triển các chức năng quản lý hồ sơ, nhân sự, dịch vụ, bảng giá và lịch làm việc; đặc tả và kiểm thử phần được giao |
-| Phạm Tiến Chiêu | 23010526 | Thiết kế lớp và dữ liệu; các nghiệp vụ lịch hẹn, tiếp đón, khám, thanh toán và doanh thu; phối hợp tích hợp, kiểm thử và tổng hợp báo cáo |
-| Bùi Hoàng Thái Anh | 23010543 | Giao diện và thiết kế xử lý phân hệ lương; thuật toán tính lương, giờ quy đổi và hệ số; đặc tả và kiểm thử phần được giao |
 
 ## 13. Hướng hoàn thiện
 
